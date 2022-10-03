@@ -3,6 +3,7 @@ import HttpException from "../utils/httpException";
 
 export function sanitizeProject(project: ProjectType): ProjectType {
   let sanitizedProject = <ProjectType>{};
+  // https://stackoverflow.com/questions/13142635/how-can-i-create-an-object-based-on-an-interface-file-definition-in-typescript
 
   sanitizedProject.title = sanitizeTitle(project.title);
 
