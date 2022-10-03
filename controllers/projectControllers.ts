@@ -1,7 +1,6 @@
 import { Response, Request } from "express";
 const mongoose = require("mongoose");
 const asyncHandler = require("express-async-handler");
-
 const Project = require("../models/projectModel");
 
 //@desc Get all projects
